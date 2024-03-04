@@ -1,1 +1,1 @@
-# mozec
+# MoZeC
