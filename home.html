@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+       MoZeC
+    </div>
+
+    <div class="menu">
+      <div class="menu-scroll">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="amazon.html">Amazon</a></li>
+          <li><a href="flipcart.html">Flipcart</a></li>
+          <li><a href="#">Myntra</a></li>
+          <li><a href="#">Mesho</a></li>
+          <li><a href="#">Jiomart</a></li>
+          <li><a href="#">1mg</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="signup">
+      <a href="#" onclick="openPopup()">Sign up</a>
+    </div>
+    <div class="cart-icon" onclick="openCartPage()">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="cart-item-count" id="cartItemCount">0</span>
+    </div>
+    <div class="cart-section" id="cartSection">
+      <h3>Shopping Cart</h3>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+    
+    <!-- Popup -->
+    <div id="signup-popup" class="popup">
+      <div class="popup-content">
+        <div class="close-btn" onclick="closePopup()">X</div>
+        <h2>Sign up</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
+  </div>
+  
+
+ 
+  <div class="bgr">
+    <img src="img/img0.jpg" alt="Loading...">
+    <div class="text1">
+      <h2>GET ALL E-COMMERCE PRODUCT</h2>
+      <h3>here. No need to visit every website to shop </h3>
+      <h3>providing all posible products </h3>
+    </div>
+  </div>
+
+  <div class="bgr1">
+    <p>ddgg</p>
+  </div>
+ 
+  
+  <script src="home.js"></script>
+</body>
+</html>
