@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo">
+       MoZeC
+    </div>
+
+    <div class="menu">
+      <div class="menu-scroll">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="amazon.html">Amazon</a></li>
+          <li><a href="flipcart.html">Flipcart</a></li>
+          <li><a href="#">Myntra</a></li>
+          <li><a href="#">Mesho</a></li>
+          <li><a href="#">Jiomart</a></li>
+          <li><a href="#">1mg</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="search-bar">
+      <input type="text" placeholder="Search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </div>
+    <div class="signup">
+      <a href="#" onclick="openPopup()">Sign up</a>
+    </div>
+    <div class="cart-icon" onclick="openCartPage()">
+      <i class="fa fa-shopping-cart"></i>
+      <span class="cart-item-count" id="cartItemCount">0</span>
+    </div>
+    <div class="cart-section" id="cartSection">
+      <h3>Shopping Cart</h3>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+    
+    <!-- Popup -->
+    <div id="signup-popup" class="popup">
+      <div class="popup-content">
+        <div class="close-btn" onclick="closePopup()">X</div>
+        <h2>Sign up</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+          
+          <input type="submit" value="Sign up">
+        </form>
+      </div>
+  </div>
+  
+
+  <div class="amazonmenu">
+    <img src="logo.png" alt="logo" id="logo">
+  </div>
+
+  <header>
+    <div id="menu-icon">&#9776;</div>
+    <div id="close-icon">&times</div>
+    <input type="text" placeholder="Search for products ...." id="search-bar-2">
+  </header>
+
+  <div id="menu-left">
+    <a href="#">Electronics</a>
+    <a href="#">Men's</a>
+    <a href="#">Women's</a>
+    <a href="#">item1</a>
+    <a href="#">item1</a>
+  </div>
+
+  <div class="mid">
+    <div class="background-text">MoZeC</div>
+    <div class="image-scroll">
+      <div class="arrow">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="image-container">
+        <img src="img/imgw11.jpg" alt="Image">
+        <button class="image-button">Order now</button>
+      </div>
+      <div class="image-container">
+        <img src="img/img11.jpg" alt="Image">
+        <button class="image-button">Order Now</button>
+      </div>
+      <div class="image-container">
+        <img src="img/imgs4.jpg" alt="Image">
+        <button class="image-button">Order Now</button>
+      </div>
+      <div class="image-container">
+        <img src="img/imgw9.jpg" alt="Image">
+        <button class="image-button">Order Now</button>
+      </div>
+      <div class="image-container">
+        <img src="img/img14.jpg" alt="Image">
+        <button class="image-button">Order Now</button>
+      </div>
+    </div>
+    <div class="div1"></div>
+  
+    <div class="div2">
+    <div class="prd1">
+      <div class="prd1-shoe1">
+        <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+        <span class="like-count">0</span>
+          <a href="#">
+              <img src="img/img17.jpg" alt="Image 1">
+              <p>Category : Mens</p>
+              <p>Color    : white , Blue</p>
+              <p>Price    : 400 /-</p>
+          </a>
+          <button class="image-button-1">Buy now</button>
+          <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+      </div>
+    </div>
+
+    <section class="prd1">
+      <div class="prd1-shoe1">
+        <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+        <span class="like-count">0</span>
+          <a href="#">
+              <img src="img/img16.jpg" alt="Loading">
+              <p>Category : Mens</p>
+              <p>Color    : white , Blue</p>
+              <p>Price    : 400 /-</p>
+          </a>
+          <button class="image-button-1">Buy now</button>
+          <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="prd1">
+      <div class="prd1-shoe1">
+        <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+        <span class="like-count">0</span>
+          <a href="#">
+              <img src="img/img15.jpg" alt="Loading">
+              <p>Category : Mens</p>
+              <p>Color    : white , Blue</p>
+              <p>Price    : 400 /-</p>
+          </a>
+          <button class="image-button-1">Buy now</button>
+          <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="prd1">
+      <div class="prd1-shoe1">
+        <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+        <span class="like-count">0</span>
+          <a href="#">
+              <img src="img/img14.jpg" alt="Loading">
+              <p>Category : Mens</p>
+              <p>Color    : white , Blue</p>
+              <p>Price    : 400 /-</p>
+          </a>
+          <button class="image-button-1">Buy now</button>
+          <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="prd1">
+      <div class="prd1-shoe1">
+        <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+        <span class="like-count">0</span>
+          <a href="#">
+              <img src="img/img13.jpg" alt="Loading">
+              <p>Category : Mens</p>
+              <p>Color    : white , Blue</p>
+              <p>Price    : 400 /-</p>
+          </a>
+          <button class="image-button-1">Buy now</button>
+          <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+      </div>
+    </section>
+    </div>
+
+    <div class="div2">
+      <div class="prd1">
+        <div class="prd1-shoe1">
+          <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+          <span class="like-count">0</span>
+            <a href="#">
+                <img src="img/imgep1.jpg" alt="Loading">
+                <p>Category : Mens</p>
+                <p>Color    : white , Blue</p>
+                <p>Price    : 400 /-</p>
+            </a>
+            <button class="image-button-1">Buy now</button>
+            <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+        </div>
+      </div>
+  
+      <section class="prd1">
+        <div class="prd1-shoe1">
+          <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+          <span class="like-count">0</span>
+            <a href="#">
+                <img src="img/imgw5.jpg" alt="Loading">
+                <p>Category : Mens</p>
+                <p>Color    : white , Blue</p>
+                <p>Price    : 400 /-</p>
+            </a>
+            <button class="image-button-1">Buy now</button>
+            <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+        </div>
+      </section>
+  
+      <section class="prd1">
+        <div class="prd1-shoe1">
+          <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+          <span class="like-count">0</span>
+            <a href="#">
+                <img src="img/imgw10.jpg" alt="Loading">
+                <p>Category : Mens</p>
+                <p>Color    : white , Blue</p>
+                <p>Price    : 400 /-</p>
+            </a>
+            <button class="image-button-1">Buy now</button>
+            <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+        </div>
+      </section>
+  
+      <section class="prd1">
+        <div class="prd1-shoe1">
+          <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+          <span class="like-count">0</span>
+            <a href="#">
+                <img src="img/imgw9.jpg" alt="Loading">
+                <p>Category : Mens</p>
+                <p>Color    : white , Blue</p>
+                <p>Price    : 400 /-</p>
+            </a>
+            <button class="image-button-1">Buy now</button>
+            <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'Image 1')">Add to Cart</button>
+        </div>
+      </section>
+  
+      <section class="prd1">
+        <div class="prd1-shoe1">
+          <button class="img-like-button" onclick="likeImage(this)"><i class="fa fa-heart"></i></button>
+          <span class="like-count">0</span>
+            <a href="#">
+                <img src="img/imgw11.jpg" alt="Image 1">
+                <p>Category : Mens</p>
+                <p>Color    : white , Blue</p>
+                <p>Price    : 400 /-</p>
+            </a>
+            <button class="image-button-1">Buy now</button>
+            <button class="add-to-cart-button" onclick="addToCart('img/img17.jpg', 'img/img17.jpg')">Add to Cart</button>
+        </div>
+      </section>
+      </div>
+  
+  <script src="home.js"></script>
+
+  <script>
+  </script>
+</body>
+</html>

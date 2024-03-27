@@ -1,0 +1,541 @@
+@import url();
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    user-select: none;
+}
+
+.logo {
+    font-size: 35px;
+    font-family:Arapey;
+    color:#D9D9D9;
+    box-sizing: border-box;
+    user-select: none;
+    
+}
+
+#header {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:30px 70px;
+    background-image: linear-gradient(to right, #000000, #3533CD);
+    box-shadow: 0p 5px 15px rgba(0, 0, 0, 0.06);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 999;
+    position: -webkit-sticky;
+    position:sticky;
+    top:0;
+}
+
+#header a {
+    text-decoration: none;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 450px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 25px;
+    align-items: normal;
+    position: relative;
+}
+
+#navbar li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 540;
+    color:#D1D9E0;
+    transition: 0.3s ease;
+    padding: 1px 5px;
+    margin-top: 2px;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    background-color:  rgb(53, 99, 199);;
+    border-radius: 2px;
+    
+}
+
+#navbar {
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+#navbar::-webkit-scrollbar {
+    display: none;
+}
+
+#header button {
+    border-radius: 5px;
+    padding: 0 5px;
+ 
+}
+
+/*vertical line */
+
+.vl {
+    border-left: 2px solid white;
+    height: 30px;
+}
+
+/* scroll menu */
+
+#myInput{ 
+    margin-left: 15%; 
+    padding:3px; 
+    border-radius: 10px; 
+  } 
+
+  input[type=text] { 
+     width: 15%; 
+     -webkit-transition: width 0.15s ease-in-out; 
+     transition: width 0.15s ease-in-out; 
+  } 
+
+  /* When the input field gets focus, 
+       change its width to 100% */
+  input[type=text]:focus { 
+    width: 20%
+  } 
+
+#myUL{ 
+    font-size:  1.3em; 
+   } 
+
+#myUL a:hover {
+    font-size: 21px;
+}
+
+
+/* search bar */
+.animals{ 
+  display: list-item;     
+ }  
+
+
+.shr1 {
+    text-decoration: none;
+}
+
+.shr {
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+/*shirt images*/
+
+
+.shirt1{
+    width: 0%;
+    height: 280px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color:  #ecf4f8;;
+    padding: 1px;
+    align-items: center; 
+    margin-left: 0px;
+}
+
+.shirt2{
+    width: 0%;
+    height: 280px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 1px;
+    align-items: center; 
+}
+
+.shirt3{
+    width: 0%;
+    height: 280px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 1px;
+    align-items: center; 
+}
+
+.shirt4{
+    width: 0%;
+    height: 280px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 1px;
+    align-items: center; 
+}
+
+#shirts {
+    display: flex;
+    margin-left: 20px;
+    padding: 24px;
+    
+}
+
+#shirts img{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 1px;
+}
+
+#shirts img:hover {
+    height: 150px;
+    width: 100%;
+    box-shadow: 3px 3px 3px 3px #959494cc;
+    transition: 0.23s ease;
+   
+    
+}
+
+.shirt1 {
+    width: 20%;
+    height: 300px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 19px;
+    align-items: center; 
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+    margin-left:50px;
+}
+
+.shirt2 {
+    width: 20%;
+    height: 300px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 19px;
+    align-items: center; 
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+    margin-left: 50px;
+}
+
+.shirt3 {
+    width: 20%;
+    height: 300px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 19px;
+    align-items: center; 
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+    margin-left: 50px;
+}
+
+.shirt4 {
+    width: 20%;
+    height: 300px;
+    border:1px solid rgb(69, 64, 64);;
+    border-radius: 5px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+    padding: 19px;
+    align-items: center; 
+    font-size: 20px;
+    text-align: center;
+    top: 50px;
+    margin-left: 50px;
+}
+
+#shirts i {
+    background-color:;
+    margin-left: 10px;
+    margin-right: 30px;
+    padding-top: 8px;
+}
+
+#shirts h5 {
+    margin-top: 10px;
+    color: #464e55;
+}
+
+#shirts h5 a {
+    text-decoration: none;
+    color:#4e5759;
+}
+
+#shirts h5 a:hover {
+    font-size: 18px;
+    color: #0571ed;
+    transition-duration: 0.2s;
+}
+/* box style */
+
+.box {
+    display: flex;
+    width: 135px;
+    height: 33px;
+    border:2px solid gray;
+    border-radius: 10px;
+    margin-top: 180px;
+    margin-left: -36px;
+    background-color: whitesmoke;
+    padding: 10px;
+    align-items: center;
+}
+
+.box i {
+    padding: 0px 5px 10px 5px;
+}
+
+
+button {
+    border: none;
+    font-size: 20px;
+}
+
+
+
+/*see more button */
+
+.more-btn {
+    margin-top: 20px;
+    margin-left: 660px;
+    margin-bottom: 10px;
+    line-height: 1em;
+}
+
+.more-btn button {
+    width: 80px;
+    height: 40px;
+    padding: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.more-btn button:hover {
+    background-color: gainsboro;
+}
+
+/*our product section */
+
+.op {
+    margin-top: 30px;
+    margin-left: 40px;
+    color: slateblue;
+}
+
+.op p {
+    font-size: 30px;
+}
+.op span {
+    font-size: 20px;
+    color: black;
+}
+
+#ourproduct {
+    display: flex;
+    width: 95%;
+    height: 310px;
+    border: 1px solid gray;
+    background-color: whitesmoke;
+    margin-top: 10px;
+    margin-left: 40px;
+    border-radius: 2px;
+    padding: 10px 5px;
+}
+
+#ourproduct a {
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.prd1 {
+    width: 200px;
+    height: 240px;
+    border-radius: 4px;
+    background-color: #ecf4f8;
+    margin-top: 28px;
+    margin-left: 105px;
+    box-shadow: 2px 2px 2px 2px #6d6c6ccc;
+}
+
+.prd1 img {
+    width: 140px;
+    height: 130px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: 30px;
+    box-shadow: 1px 1px 1px 1px #6d6c6ccc;
+}
+
+.prd1:hover {
+    box-shadow: 3px 3px 3px 3px #9a9b9b;
+    transition-duration: 0.1s;
+}
+.prd1 p {
+    margin-left: 30px;
+    color: darkslategrey;
+}
+
+/*social media */
+
+
+#social a {
+    text-decoration: none;
+
+}
+
+#social {
+    background-color:gainsboro;
+    padding: 20px 40px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+#social h3 {
+    margin-left: 600px;
+    padding:20px;
+}
+
+
+
+/*  food style sheet */
+
+
+#sec {
+    display: flex;
+   
+}
+
+.sec-a {
+
+    background-color: #91a2b0;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: flex;
+ 
+}
+
+.btn {
+    background-color: rgb(243, 245, 247);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 11px;
+    width: 80px;
+    height: 30px;
+    margin-top: 80px;
+    cursor: pointer;
+
+}
+
+.sec-a p{
+    padding: 10px 20px;
+}
+
+.sec-a img {
+    margin-left: 10px;
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+
+  }
+
+  .sec-b img {
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+
+  }
+
+  /*back button styling */
+
+
+.backbtn {
+    padding: 3px 15px;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-left: 50px;
+    border: none;
+    font-size: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.backbtn:hover {
+    background-color:gray;
+    transition-duration: 0.15s;
+}
+
+.page a {
+    text-decoration: none;
+    padding: 5px;
+}
+
+.page {
+    display: flex;
+    margin-left: 660px;
+}
+
+.p1  {
+    width: 40px;
+    height: 30px;
+    border:1px solid rgb(69, 64, 64);
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 5px;
+    background-color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+ 
+
+  
+
+
+
+
+
